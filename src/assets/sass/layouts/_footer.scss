@@ -1,0 +1,76 @@
+.footer{
+	background-color: #000000;
+	padding: 45px 0;
+	&__logo-wrapper{
+		display: block;
+		float: left;
+		margin-right: 45px;
+	}
+	&__logo{
+		&-link{
+			display: inline-block;
+		}
+	}
+	&__list-wrapper{
+		display: block;
+		margin-top: 10px;
+		float: left;
+	}
+	&__list{
+		column-count: 2;
+		&-item{
+			margin-right: 40px;
+		}
+		&-link{
+			color: white;
+			font-family: $main-font;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 22px;
+			text-decoration: underline;
+			&:hover{
+				color: $white;
+			}
+		}
+	}
+	&__contact-wrapper{
+		display: block;
+		margin-top: 10px;
+		float: right;
+	}
+	&__contact{
+		&-address{
+			float: left;
+			color: white;
+			font-family: $main-font;
+			font-style: normal;
+			margin-right: 45px;
+			font-size: 16px;
+			font-weight: 400;
+		}
+		&-number{
+			color: white;
+			display: inline-block;
+			width: 100%;
+			text-align: right;
+			font-family: $main-font;
+			font-size: 16px;
+			font-weight: 400;
+		}
+		&-link{
+			color: $white;
+			font-family: $main-font;
+			font-size: 16px;
+			font-weight: 400;
+			text-decoration: underline;
+			text-transform: uppercase;
+			&:hover{
+				color: $white;
+			}
+		}
+		&-company{
+			display: inline-block;
+			float: right;
+		}
+	}
+}

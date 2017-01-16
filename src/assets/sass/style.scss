@@ -1,0 +1,18 @@
+@import './base/reset.scss';
+@import './base/fonts.scss';
+@import './base/mixins.scss';
+@import './base/variables.scss';
+@import './base/baseelements.scss';
+@import './base/buttons.scss';
+
+@import './layouts/header.scss';
+@import './layouts/menu.scss';
+@import './layouts/footer.scss';
+
+@import './modules/banner.scss';
+@import './modules/slider.scss';
+@import './modules/work.scss';
+@import './modules/guarantees.scss';
+@import './modules/customers';
+
+@import './states/responsive.scss';

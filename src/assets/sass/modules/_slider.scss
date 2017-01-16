@@ -1,0 +1,59 @@
+.slider{
+	position: relative;
+	display: inline-block;
+	padding: 50px 0;
+	&__title{
+		color: black;
+		font-family: $main-font;
+		font-size: 35px;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 35px;
+	}
+	&__container{
+		width: 35%;
+		float: right;
+	}
+	&__wrapper{
+		text-align: center;
+		margin-bottom: 90px;
+	}
+	&__img-content{
+		position: relative;
+		width: 262px;
+		height: 262px;
+		border: 5px solid rgba(255, 255, 255, 0.46);
+		box-shadow: 0 0 11px rgba(0, 0, 0, 0.14);
+		overflow: hidden;
+		border-radius: 50%;
+		.prev{
+			top: 100%;
+		}
+		.active{
+			top: 0;
+		}
+		.next{
+			top: -100%;
+		}
+		img{
+			width: 100%;
+		}
+	}
+	&__img{
+		position: absolute;
+		left: 0;
+		transition: 0.8s;
+	}
+	&__prev-icon{
+		position: absolute;
+		top: 0%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&__next-icon{
+		position: absolute;
+		left: 50%;
+		bottom: 0%;
+		transform: translateX(-50%);
+	}
+}

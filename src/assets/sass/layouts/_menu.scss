@@ -1,0 +1,105 @@
+.menu{
+	&__wrapper{
+		background-color: $orange;
+		padding: 15px;
+	}
+	&__list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__item{
+		position: relative;
+		&:after{
+			content: '\2022';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: -30px;
+			font-size: 24px;
+			color: $white;
+		}
+		&:last-child:after{
+			display: none;
+		}
+	}
+	&__link{
+		position: relative;
+		font-family: $main_font;
+		font-size: 20px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: $white;
+		&:hover{
+			color: $white;
+		}
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 0%;
+			height: 2px;
+			background-color: $white;
+			bottom: 0px;
+			transition: 0.5s;
+		}
+		&:hover:after{
+			width: 100%;
+		}
+	}
+	&__icon_wrapper{
+		position: absolute;
+		top: 14px;
+		right: 20px;
+		width: 29px;
+		height: 22px;
+		cursor: pointer;
+	}
+	&__icon{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: inline-block;
+		width: 29px;
+		height: 2px;
+		background-color: $white;
+		transition: 0.3;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			top: -8px;
+			width: 29px;
+			height: 2px;
+			background-color: $white;
+			transition: 0.3s;
+		}
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -8px;
+			width: 29px;
+			height: 2px;
+			background-color: $white;
+			transition: 0.3s;
+		}
+		&.active{
+			&:before{
+				top: 0px;
+			}
+			&:after{
+				bottom: 0px;
+			}
+		}
+		&.close{
+			width: 0px;
+			&:before{
+				transform: rotate(-45deg);
+			}
+			&:after{
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
