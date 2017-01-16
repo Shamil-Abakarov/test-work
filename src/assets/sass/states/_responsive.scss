@@ -32,6 +32,7 @@
 	}
 
 	.menu{
+		display: none;
 		&__item{
 			width: 100%;
 			margin-bottom: 15px;
@@ -312,11 +313,9 @@
 	}
 
 	.menu{
-		&__wrapper{
-
-		}
+		display: none;
 		&__list{
-			display: block;
+			display: none;
 		}
 		&__item{
 			width: 100%;

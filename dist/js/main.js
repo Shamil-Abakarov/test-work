@@ -12,7 +12,7 @@
 		if(documentWidth < 768 ){
 			$('.customers__content-item').hide();
 			$('.menu').hide();
-		} else if( documentWidth >= 768) {
+		} else if( documentWidth > 768) {
 			$('.customers__content-item').css('display','');
 			$('.menu').show();
 		}

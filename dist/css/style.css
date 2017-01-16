@@ -104,6 +104,7 @@ html {
 
 body {
   min-height: 100%;
+  overflow-x: hidden;
   height: 100%;
   font-family: "Arial", sans-serif; }
 
@@ -717,11 +718,13 @@ a {
   .header__callback-link {
     font-size: 16px;
     padding: 5px 10px; }
-  .menu__item {
-    width: 100%;
-    margin-bottom: 15px; }
-    .menu__item:last-child {
-      margin-bottom: 0; }
+  .menu {
+    display: none; }
+    .menu__item {
+      width: 100%;
+      margin-bottom: 15px; }
+      .menu__item:last-child {
+        margin-bottom: 0; }
   .banner__content {
     width: 100%;
     -webkit-transform: translateX(0%) skew(0deg);
@@ -905,32 +908,34 @@ a {
   .header__callback-link {
     font-size: 20px;
     padding: 10px 15px; }
-  .menu__list {
-    display: block; }
-  .menu__item {
-    width: 100%;
-    margin-bottom: 15px; }
-    .menu__item:last-child {
-      margin-bottom: 0; }
-  .menu__link {
-    position: relative;
-    font-family: "PF Din Text Cond Pro";
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #ffffff; }
-    .menu__link:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 0%;
-      height: 2px;
-      background-color: #ffffff;
-      bottom: 0px;
-      -webkit-transition: 0.5s;
-      transition: 0.5s; }
-    .menu__link:hover:after {
-      width: 100%; }
+  .menu {
+    display: none; }
+    .menu__list {
+      display: none; }
+    .menu__item {
+      width: 100%;
+      margin-bottom: 15px; }
+      .menu__item:last-child {
+        margin-bottom: 0; }
+    .menu__link {
+      position: relative;
+      font-family: "PF Din Text Cond Pro";
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #ffffff; }
+      .menu__link:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: #ffffff;
+        bottom: 0px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
+      .menu__link:hover:after {
+        width: 100%; }
   .banner__content {
     width: 550px;
     -webkit-transform: translateX(-50%) skew(0deg);
